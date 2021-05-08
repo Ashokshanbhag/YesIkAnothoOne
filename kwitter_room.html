@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="stylesheet" href="kwitter_room.css">
+</head>
+<body>
+<div class="container">
+ <button style="width: 100px;background: none;border: 2px solid #4caf50;color: white;padding: 5px;font-size: 18px;cursor: pointer;margin: 12px 0;"id="logout"  onclick= "logOut()">Logout</button>
+	<center>
+		<img src="twitter_PNG2.png" style="height: 100px; width: 100px; border-radius: 50px;">
+		<h1><font color="white">Welcome To Kwitter</font></h1>
+
+		<h3 id = "username" class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<h2><font color="white">Add Room</font></h2>
+
+			<input style="width: 500px; height: 30px;" class="text" id="room_name" class="form-control" placeholder = "Enter Room Here">
+
+		</div>
+		<button onclick="addRoom()" style="width: 100px;background: none;border: 2px solid #4caf50;color: white;padding: 5px;font-size: 18px;cursor: pointer;margin: 12px 0;">Add Room</button>
+		<h3><font color="white">Trending Rooms</font></h3>
+
+		<div id="output"></div>
+
+	</div>
+	
+	</center>
+
+<script src="kwitter_room.js"></script>
+
+</body>
+</html>
